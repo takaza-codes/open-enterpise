@@ -4,11 +4,11 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    height: 100%;
+    width: 100%;
     font-family: Montserrat;
-    font-size: 18;
+    font-size: 18px;
     color: #31302d;
     background-color: #F9F9F9;
     box-sizing: border-box;
@@ -19,11 +19,11 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 2.7rem;
 }
 
 a {
@@ -38,8 +38,8 @@ ul {
 li {
     display: inline;
     width: fit-content;
-    margin-right: 20px;
-    font-size: 20px;
+    margin-right: 1rem;
+    font-size: 1.1rem;
     font-weight: bolder;
 }
 
@@ -47,10 +47,14 @@ li:last-child {
     color:#71A894;
 }
 
+.burger {
+    display: none;
+}
+
 header {
     display: grid;
-    grid-template-columns: 40% 1fr max-content;
-    grid-template-rows: 100px 1fr;
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: 15% 1fr;
     grid-template-areas: "header header"
                         "banner banner-image";
     width: fit-content;
@@ -65,31 +69,33 @@ header {
     align-items: center;
 }
 
+.header > a > img {
+    height: 3rem;
+}
+
 .banner {
     grid-area: banner;
 }
 
 .banner p {
-    font-size: 24px;
+    font-size: 1.3rem;
     color: #66645E;
-}
-
-.shadow {
-    grid-area: banner-image;
-    justify-self: end;
-    z-index: 0;
 }
 
 .main-image {
     grid-area: banner-image;
     justify-self: end;
     margin-right: 0;
-    z-index: 1;
+}
+
+.main-image img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .button {
-    margin-top: 20px;
-    padding: 25px;
+    margin-top: 1rem;
+    padding: 1.1rem;
     background-color: #71A894;
     border: none;
     color: white;
@@ -97,7 +103,7 @@ header {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .by-three {
@@ -161,7 +167,7 @@ header {
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -177,7 +183,7 @@ h4 {
     padding: 2%;
     color: white; 
     background-color: #71A894;
-    border-radius: 40px;
+    border-radius: 2.2rem;
 }
 
 .apply-link {
@@ -199,7 +205,7 @@ h4 {
 
 .main-body-2, .main-body-3, .main-body-6 {
     font-family: Roboto Mono;
-    font-size: 16px;
+    font-size: 0.9rem;
 }
 
 .main-body-2 {
@@ -222,7 +228,7 @@ h4 {
     align-items: center;
     background-color: #F9F9F9;
     border: 4px solid #31302d;
-    border-radius: 16px; 
+    border-radius: 0.9rem;
     z-index: 1;
 }
 
@@ -230,11 +236,11 @@ h4 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     align-self: end;
-    height: 330px;
-    width: 480px;
+    max-height: 330px;
+    max-width: 480px;
     margin-left: 5%;
     background-color: #71A894;
-    border-radius: 16px;
+    border-radius: 0.9rem;
     z-index: 0;
 }
 
@@ -242,11 +248,11 @@ h4 {
     margin: 20px 0 25px 25px;
     grid-row: 1 / 2;
     grid-column: 1 / 3;
-    font-size: 32px;
+    font-size: 1.8rem;
 }
 
 .members {
-    padding-left: 25px;
+    padding-left: 1.4rem;
     max-width: 72px;
 }
 
@@ -256,7 +262,7 @@ h4 {
 
 .name {
     margin: 0;
-    font-size: 24px;
+    font-size: 1.3rem;
     font-weight: 400;
 }
 
@@ -274,7 +280,7 @@ h4 {
     padding: 3%;
     background-color: #F9F9F9;
     border: 4px solid #31302d;
-    border-radius: 16px; 
+    border-radius: 0.9rem; 
 }
 
 .one-member {
@@ -318,15 +324,15 @@ h4 {
     grid-column: 1 / 3;
     justify-self: center;
     padding: 3% 25% 3% 25%;
-    margin-top: 25px;
+    margin-top: 1.4rem;
     background-color: #31302d;
     border: none;
     color: white;
-    border-radius: 16px;
+    border-radius: 0.9rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .main-body-6 {
@@ -335,7 +341,7 @@ h4 {
     grid-template-rows: 30% 60%;
     align-items: center;
     justify-items: center;
-    gap: 20px;
+    gap: 1.1rem;
 }
 
 .member-card-1 {
@@ -353,12 +359,12 @@ h4 {
 }
 
 .member-card-1 h5 {
-    font-size: 16px;
+    font-size: 0.9rem;
 }
 
 .member-card-1 p {
     margin-top: 0;
-    font-size: 15px;
+    font-size: 0.8rem;
 }
 
 .member-card-2 {
@@ -374,8 +380,8 @@ h4 {
     padding-left: 20px;
     background-color: #F3F0EA;
     border: 4px solid #31302d;
-    border-radius: 16px; 
-    font-size: 16px;
+    border-radius: 0.9rem; 
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
@@ -386,7 +392,7 @@ h4 {
 }
 
 .star {
-    max-width: 16px;
+    max-width: 0.9rem;
 }
 
 .member-card-3 {
@@ -401,7 +407,7 @@ h4 {
     justify-items: center;
     background-color: #F9F9F9;
     border: 4px solid #71A894;
-    border-radius: 16px; 
+    border-radius: 0.9rem; 
 }
 
 .card-3-image {
@@ -413,20 +419,20 @@ h4 {
 #card-3-name {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 
 .member-card-3 .member-job {
     grid-row: 3 / 4;
     grid-column: 1 / 3;
-    font-size: 13px;
+    font-size: 0.7rem;
 }
 
 .member-card-3 p {
     grid-row: 4 / 5;
     grid-column: 1 / 2;
-    font-size: 13px;
+    font-size: 0.7rem;
 }
 
 .commits {
@@ -440,7 +446,7 @@ h4 {
     padding: 5% 15% 5% 15%;
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 12px;
+    font-size: 0.65rem;
 }
 
 .container {
@@ -453,19 +459,19 @@ h4 {
 .divider {
     width: 100vw;
     margin: 0;
-    padding-top: 35px;
+    padding-top: 2rem;
 }
 
 .bottom-button {
     background-color: #31302d;
     border: none;
     color: white;
-    padding: 25px;
+    padding: 1.4rem;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 footer {
@@ -489,4 +495,391 @@ footer {
 .footer-image {
     display: grid;
     align-self: end;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    header {
+        padding: 3%;
+    }
+
+    .header > a > img {
+        height: 2.5rem;
+    }
+
+    .main-image {
+        max-width: 700px;
+    }
+
+    .main-body-4 {
+        padding-left: 2rem;
+    }
+    
+    .main-body-3, .one-member, .member-description, .data {
+        max-width: 380px;
+        min-width: 300px;
+    }
+
+    .members {
+        max-width: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header > a > img {
+        height: 2rem;
+    }
+
+    .banner p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        margin-top: 0.7rem;
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    li {
+        font-size: 0.7rem;
+    }
+
+    .burger > img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .main-image img {
+        max-width: 400px;
+    }
+
+    .by-three {
+        gap: 0.5rem;
+    }
+
+    .card-icon {
+        max-height: 60px;
+    }
+
+    .main-body-2, .main-body-3, .main-body-6 {
+        max-width: 300px;
+        font-size: 0.6rem;
+    }
+
+    .members-1 {
+        max-width: 300px;
+        min-width: 250px;
+        max-height: 270px;
+        min-height: 250px;
+    }
+
+    .members-1 h3 {
+        margin: 2%;
+        font-size: 1.2rem;
+    }
+
+    .members {
+        max-width: 40px;
+    }
+
+    .name {
+        font-size: 0.9rem;
+    }
+
+    .main-body-3 {
+        padding: 6% 4% 0% 4%;
+        max-width: 300px;
+        min-width: 270px;
+        max-height: 270px;
+        min-height: 250px;
+    }
+
+    .figures {
+        font-size: 0.9rem;
+    }
+
+    .member-button {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .main-body-6 {
+        padding-left: 5%;
+        gap: 0.5rem;
+    }
+
+    .member-card-1 h5, .member-card-2 h4{
+        font-size: 0.7rem;
+    }
+
+    .member-card-1 p {
+        font-size: 0.6rem;
+    }
+
+    .member-card-2 {
+        max-width: 160px;
+        min-width: 150px;
+        max-height: 180px;
+        padding-bottom: 0.5rem;
+        padding-left: 0.6rem;
+    }
+
+    .member-card-2 {
+        font-size: 0.6rem;
+    }
+
+    .members-2 {
+        max-height: 25px;
+    }
+
+    .star {
+        max-width: 0.6rem;
+    }
+
+    .member-card-3 {
+        font-size: 0.6rem;
+        min-width: 110px;
+        max-height: 150px;
+    }
+
+    .card-3-image img {
+        max-width: 35px;
+    }
+
+    .application-1, .application-2, .application-3 {
+        font-size: 0.6rem;
+    }
+
+    .application-1 h4, .application-2 h4, .application-3 h4 {
+        font-size: 0.8rem;
+    }
+
+    .bottom-button {
+        padding: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .container {
+        grid-template-rows: 40% 1fr;
+    }
+
+    .footer-image img {
+        max-width: 450px;
+    }
+
+    .footer-2 > div > img {
+        max-height: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    body {
+        font-size: 0.6rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 1fr;
+        grid-template-areas:
+            "header"
+            "banner";
+        text-align: left;
+        padding: 0;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: end;
+    }
+
+    .header a {
+        grid-column: 1 / 2;
+    }
+
+    .banner {
+        padding-top: 1%;
+        padding-left: 3%;
+        z-index: 1;
+    }
+
+    .main-image {
+        grid-area: banner;
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    .button {
+        margin-top: 1rem;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .burger {
+        grid-column: 2 / 3;
+        display: contents;
+    }
+
+    .burger img {
+        max-width: 3rem;
+    }
+
+    .by-three {
+        display: grid;
+        grid-template-rows: 10% 8% repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        row-gap: 0.5rem;
+        column-gap: 0;
+    }
+
+    .card-1 {
+        grid-column: 1 / 2;
+    }
+
+    .card-2 {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+
+    .card-3 {
+        grid-row: 5 / 6;
+        grid-column: 1 / 2;
+    }
+
+    .card-1, .card-2, .card-3 {
+        width: 100%;
+        max-height: 150px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .card-icon {
+        max-height: 45px;
+    }
+
+    .main-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        padding: 5%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .main-body-1, .main-body-4, .main-body-5 {
+        margin-top: 10%;
+    }
+    
+    .main-body-2 {
+        justify-self: center;
+        text-align: left;
+    }
+
+    .main-body-2 h3 {
+        margin: 3%;
+        text-align: center;
+    }
+
+    .members-1 {
+        max-width: 400px;
+        min-width: 320px;
+        max-height: 180px;
+        min-height: 170px;
+    }
+
+    .main-body-3 {
+        grid-row: 4 / 5;
+    }
+
+    .main-body-4 {
+        grid-row: 3 / 4;
+        padding-left: 0;
+    }
+
+    .main-body-3 {
+        padding: 6% 4% 0% 4%;
+        max-width: 400px;
+        min-width: 320px;
+        max-height: 220px;
+        min-height: 210px;
+    }
+
+    .main-body-6 {
+        max-width: 400px;
+        padding-left: 0;
+        gap: 0.8rem;
+    }
+
+    .application-2 {
+        grid-row: 4 / 5;
+    }
+
+    .application-3 {
+        grid-row: 5 / 6;
+    }
+
+    .application-1, .application-2, .application-3 {
+        padding: 0 5% 3% 5%;
+        text-align: left;
+        background-color: white;
+        border-radius: 12px;
+        font-family: Roboto Mono;
+        font-weight: 300;
+    }
+
+    .subtitle {
+        margin-top: 2%;
+    }
+
+    .container {
+        grid-template-rows: 45% 1fr;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 15%;
+        grid-template-areas: "footer-1"
+                            "footer-2";
+        align-items: center;
+    }
+
+    .footer-image {
+        max-width: 400px;
+        grid-area: footer-1;
+        align-self: center;
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    .footer-1 {
+        grid-area: footer-1;
+        z-index: 1;
+    }
+
+    footer ul {
+        display: contents; 
+    }
+
+    li {
+        margin-right: 0.5rem;
+        font-size: 0.5rem;
+    }
 }
